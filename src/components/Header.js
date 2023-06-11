@@ -6,7 +6,7 @@ class Header extends Component {
         return(
             <header>
                 <div id="icon">
-                    <h1>Xomato</h1>
+                    <h1>EARTHLY</h1>
                 </div>
                 <div id="loginset">
                     <button>Login</button>

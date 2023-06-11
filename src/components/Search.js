@@ -48,7 +48,7 @@ class Search extends Component {
         return (
             <div id="search">
                 <div id="logo">
-                    <span>D!</span>
+                    <span>E!</span>
                 </div>
                 <div id="heading">
                     Find Best Place Near You
