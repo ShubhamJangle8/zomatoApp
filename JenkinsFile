@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+      maven 'mymaven'
+    }
     stages {
         stage("welcome msg"){
             steps {
@@ -11,9 +14,9 @@ pipeline {
                 git credentialsId: 'aa351390-a429-4a60-9030-ae5ed8c9daa0', url: 'https://github.com/ShubhamJangle8/zomatoApp.git'
             }
         }
-        stage("maven build"){
+        stage("compile"){
             steps {
-                echo "$PATH"
+                sh "mvn compile"
             }
         }
     }
