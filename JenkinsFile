@@ -11,5 +11,10 @@ pipeline {
                 git credentialsId: 'aa351390-a429-4a60-9030-ae5ed8c9daa0', url: 'https://github.com/ShubhamJangle8/zomatoApp.git'
             }
         }
+        stage("maven build"){
+            steps {
+                echo $PATH
+            }
+        }
     }
 }
